@@ -75,13 +75,13 @@ flutter:
   # example:
   fonts:
     - family: Gloock
-      fonts:        
-        - asset: assets/fonts/Gloock-Regular.ttf
-          weight: 600
-    - family: ConcertOne
       fonts:
-        - asset: fonts/ConcertOne-Regular.tff        
+        - asset: assets/fonts/Gloock-Regular.ttf
           weight: 700
+    - family: Concert One
+      fonts:
+        - asset: assets/fonts/ConcertOne-Regular.ttf
+          weight: 400
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

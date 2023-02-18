@@ -11,7 +11,6 @@ class CategoriesScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'Categories',
-          style: TextStyle(fontFamily: 'ConcertOne'),
         ),
       ),
       body: GridView(
