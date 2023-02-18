@@ -1,4 +1,4 @@
-package com.example.woc
+package com.kamildolny.woc
 
 import io.flutter.embedding.android.FlutterActivity
 

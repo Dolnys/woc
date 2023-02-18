@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "356620172692",
+    "project_id": "wofc-ce77b",
+    "storage_bucket": "wofc-ce77b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356620172692:android:ffcc840d77c8278f26a381",
+        "android_client_info": {
+          "package_name": "com.kamildolny.woc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356620172692-10kha4rt362j7686dhkod80a4kejcr2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWu0ifo2ltcIatgWpAp445P4DUqDw6cNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356620172692-10kha4rt362j7686dhkod80a4kejcr2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

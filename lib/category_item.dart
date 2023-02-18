@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:woc/screens/categories_coctails_screen.dart';
 
 class CategoryItem extends StatelessWidget {
+  final String id;
   final String title;
   final Color color;
-  const CategoryItem({super.key, required this.color, required this.title});
+  const CategoryItem(
+      {super.key, required this.color, required this.title, required this.id});
 
   void selectCategory(BuildContext context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) {
-          return const CategoryCoctailsScreen();
-        },
-      ),
+    Navigator.of(context).pushNamed(
+      CategoryCoctailsScreen.routeName,
+      arguments: {
+        'id': id,
+        'title': title,
+      },
     );
   }
 
