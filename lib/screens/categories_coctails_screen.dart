@@ -22,6 +22,7 @@ class CategoryCoctailsScreen extends StatelessWidget {
       body: ListView.builder(
         itemBuilder: (context, index) {
           return CoctailItem(
+            id: categoryCoctail[index].id,
             imageUrl: categoryCoctail[index].imageUrl,
             title: categoryCoctail[index].title,
             alcoholContent: categoryCoctail[index].alcoholContent,

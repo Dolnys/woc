@@ -14,7 +14,11 @@ class MyApp extends StatelessWidget {
       title: 'World Of Coctails',
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
-          titleTextStyle: TextStyle(fontFamily: 'Gloock', fontSize: 20),
+          titleTextStyle: TextStyle(
+            fontFamily: 'Gloock',
+            fontSize: 20,
+            letterSpacing: 2,
+          ),
         ),
         fontFamily: 'Concert One',
       ).copyWith(
@@ -27,7 +31,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const CategoriesScreen(),
         CategoryCoctailsScreen.routeName: (context) =>
             const CategoryCoctailsScreen(),
-        CoctailDetail.routeName: (context) => const CoctailDetail()
+        CoctailDetailScreen.routeName: (context) => const CoctailDetailScreen()
       },
     );
   }

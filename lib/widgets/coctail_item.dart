@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:woc/model/coctail.dart';
+import 'package:woc/screens/coctail_detail_screen.dart';
 
 class CoctailItem extends StatelessWidget {
+  final String id;
   final String title;
   final String imageUrl;
   final String alcoholContent;
   final Complexity complexity;
-  void selectCoctail() {}
-  const CoctailItem({
-    super.key,
-    required this.imageUrl,
-    required this.title,
-    required this.alcoholContent,
-    required this.complexity,
-  });
+
+  const CoctailItem(
+      {super.key,
+      required this.imageUrl,
+      required this.title,
+      required this.alcoholContent,
+      required this.complexity,
+      required this.id});
 
   String get complexityText {
     switch (complexity) {
@@ -28,10 +30,17 @@ class CoctailItem extends StatelessWidget {
     }
   }
 
+  void selectCoctail(BuildContext context) {
+    Navigator.of(context).pushNamed(
+      CoctailDetailScreen.routeName,
+      arguments: id,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: selectCoctail,
+      onTap: () => selectCoctail(context),
       child: Card(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),

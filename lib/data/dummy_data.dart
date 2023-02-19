@@ -81,7 +81,7 @@ const dummyCoctails = [
     complexity: Complexity.simple,
   ),
   Coctail(
-    id: 'm1',
+    id: 'm2',
     categories: [
       'c2',
       'c10',
