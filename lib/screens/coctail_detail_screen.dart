@@ -76,20 +76,31 @@ class CoctailDetailScreen extends StatelessWidget {
                   border: Border.all(
                 color: Colors.black,
               )),
-              height: 160,
+              height: 240,
               width: MediaQuery.of(context).size.width * 0.9,
               child: ListView.builder(
-                itemBuilder: (context, index) => ListTile(
-                  leading: CircleAvatar(
-                    child: Text(
-                      '# ${index + 1}',
-                      textAlign: TextAlign.center,
+                itemBuilder: (context, index) => Column(
+                  children: [
+                    ListTile(
+                      leading: CircleAvatar(
+                        child: Text(
+                          '# ${index + 1}',
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      title: Text(
+                        selectedCoctail.steps[index],
+                        style: const TextStyle(
+                          fontFamily: 'Phudu',
+                          fontSize: 13,
+                        ),
+                      ),
                     ),
-                  ),
-                  title: Text(
-                    selectedCoctail.steps[index],
-                    style: const TextStyle(fontFamily: 'Phudu', fontSize: 13),
-                  ),
+                    const Divider(
+                      thickness: 0.6,
+                      color: Colors.black54,
+                    ),
+                  ],
                 ),
                 itemCount: selectedCoctail.steps.length,
               ),
