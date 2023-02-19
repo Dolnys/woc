@@ -42,7 +42,10 @@ class CategoryItem extends StatelessWidget {
         ),
         child: Text(
           title,
-          style: const TextStyle(fontSize: 20, letterSpacing: 2),
+          style: const TextStyle(
+            fontSize: 20,
+            letterSpacing: 2,
+          ),
         ),
       ),
     );

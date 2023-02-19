@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:woc/screens/categories_coctails_screen.dart';
 import 'package:woc/screens/categories_screen.dart';
+import 'package:woc/screens/coctail_detail_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const CategoriesScreen(),
         CategoryCoctailsScreen.routeName: (context) =>
             const CategoryCoctailsScreen(),
+        CoctailDetail.routeName: (context) => const CoctailDetail()
       },
     );
   }

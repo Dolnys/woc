@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   cloud_firestore: ^4.4.2
   firebase_core: ^2.6.1
+  bloc: ^8.1.1
 
 dev_dependencies:
   flutter_test:
@@ -84,6 +85,11 @@ flutter:
       fonts:
         - asset: assets/fonts/ConcertOne-Regular.ttf
           weight: 400
+    - family: Phudu
+      fonts:
+        - asset: assets/fonts/Phudu-VariableFont_wght.ttf
+          weight: 700      
+          
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
