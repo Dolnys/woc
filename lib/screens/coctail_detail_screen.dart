@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:woc/data/dummy_data.dart';
-import 'package:woc/model/coctail.dart';
 
 class CoctailDetailScreen extends StatelessWidget {
   static const routeName = '/coctail-detail';
@@ -18,7 +17,7 @@ class CoctailDetailScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
+            SizedBox(
               height: 200,
               width: double.infinity,
               child: Image.network(
@@ -43,11 +42,11 @@ class CoctailDetailScreen extends StatelessWidget {
                   border: Border.all(
                 color: Colors.black,
               )),
-              height: 160,
+              height: 180,
               width: MediaQuery.of(context).size.width * 0.9,
               child: ListView.builder(
                 itemBuilder: (context, index) => Card(
-                  color: const Color.fromARGB(255, 204, 196, 208),
+                  color: const Color.fromARGB(255, 223, 223, 223),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
