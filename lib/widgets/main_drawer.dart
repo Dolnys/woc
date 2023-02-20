@@ -5,7 +5,7 @@ class MainDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget buildListTile(String title, IconData icon) {
+    Widget buildListTile(String title, IconData icon, void Function() onTap) {
       return ListTile(
         leading: Icon(
           icon,
@@ -19,6 +19,7 @@ class MainDrawer extends StatelessWidget {
             fontFamily: 'Phudu',
           ),
         ),
+        onTap: onTap,
       );
     }
 
@@ -46,10 +47,16 @@ class MainDrawer extends StatelessWidget {
           buildListTile(
             'Coctails',
             Icons.local_bar,
+            () {
+              Navigator.of(context).pushNamed('/');
+            },
           ),
           buildListTile(
             'Filter',
             Icons.filter_alt,
+            () {
+              Navigator.of(context).pushNamed('/filters');
+            },
           )
         ],
       ),

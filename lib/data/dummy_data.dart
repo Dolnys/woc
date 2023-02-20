@@ -103,4 +103,24 @@ const dummyCoctails = [
     alcoholContent: '19.5',
     complexity: Complexity.simple,
   ),
+  Coctail(
+    id: 'm3',
+    categories: [
+      'c1',
+    ],
+    title: 'Gin & Tonic',
+    imageUrl:
+        'https://www.gall.nl/dw/image/v2/BCLJ_PRD/on/demandware.static/-/Sites-gall-storefront-catalog/default/dwfa0bb736/2022/Contentheaders/Gin%20tonic%20header.jpg',
+    ingredients: [
+      '50ml Dry Gin',
+      '120ml Tonic Water',
+    ],
+    steps: [
+      'Fill a highball glass with ice, then add the gin.',
+      'Top with the tonic water and gently stir..',
+      'Garnish with lime wheels or seasonal garnishes.',
+    ],
+    alcoholContent: '11,5',
+    complexity: Complexity.simple,
+  ),
 ];
