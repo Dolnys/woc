@@ -9,13 +9,19 @@ class CoctailItem extends StatelessWidget {
   final String alcoholContent;
   final Complexity complexity;
 
-  const CoctailItem(
-      {super.key,
-      required this.imageUrl,
-      required this.title,
-      required this.alcoholContent,
-      required this.complexity,
-      required this.id});
+  final FlavourProfile flavourProfile;
+  final Power power;
+
+  const CoctailItem({
+    super.key,
+    required this.imageUrl,
+    required this.title,
+    required this.alcoholContent,
+    required this.complexity,
+    required this.id,
+    required this.flavourProfile,
+    required this.power,
+  });
 
   String get complexityText {
     switch (complexity) {

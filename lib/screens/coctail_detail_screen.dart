@@ -39,9 +39,10 @@ class CoctailDetailScreen extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
-                  border: Border.all(
-                color: Colors.black,
-              )),
+                border: Border.all(
+                  color: Colors.black,
+                ),
+              ),
               height: 180,
               width: MediaQuery.of(context).size.width * 0.9,
               child: ListView.builder(
@@ -72,9 +73,10 @@ class CoctailDetailScreen extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
-                  border: Border.all(
-                color: Colors.black,
-              )),
+                border: Border.all(
+                  color: Colors.black,
+                ),
+              ),
               height: 240,
               width: MediaQuery.of(context).size.width * 0.9,
               child: ListView.builder(
@@ -105,6 +107,15 @@ class CoctailDetailScreen extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.teal,
+        onPressed: () {
+          Navigator.of(context).pop();
+        },
+        child: const Icon(
+          Icons.delete,
         ),
       ),
     );

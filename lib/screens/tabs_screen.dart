@@ -38,6 +38,7 @@ class _TabsScreenState extends State<TabsScreen> {
       drawer: const MainDrawer(),
       body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
+        selectedLabelStyle: const TextStyle(fontFamily: 'Phudu'),
         unselectedItemColor: Colors.white38,
         selectedItemColor: Colors.white,
         onTap: _selectPage,

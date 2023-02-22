@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           titleTextStyle: TextStyle(
-            fontFamily: 'Gloock',
+            fontWeight: FontWeight.w500,
+            fontFamily: 'Phudu',
             fontSize: 20,
             letterSpacing: 2,
           ),

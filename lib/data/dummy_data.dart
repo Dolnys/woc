@@ -79,30 +79,33 @@ const dummyCoctails = [
     ],
     alcoholContent: '23',
     complexity: Complexity.simple,
+    flavourProfile: FlavourProfile.sour,
+    power: Power.strong,
   ),
   Coctail(
-    id: 'm2',
-    categories: [
-      'c2',
-      'c10',
-    ],
-    title: 'Espresso Martini',
-    imageUrl:
-        'https://images.immediate.co.uk/production/volatile/sites/30/2020/10/Ultimate-espresso-martini-260c465.jpg',
-    ingredients: [
-      '60ml Vodka',
-      '30ml cofee liquor',
-      '30ml espresso',
-      '15ml simple syrup',
-    ],
-    steps: [
-      'Add vodka, coffee liqueur, espresso and simple syrup to a shaker filled with ice and shake until well-chilled.',
-      'Strain into a chilled cocktail glass.',
-      'Garnish with 3 coffee beans.',
-    ],
-    alcoholContent: '19.5',
-    complexity: Complexity.simple,
-  ),
+      id: 'm2',
+      categories: [
+        'c2',
+        'c10',
+      ],
+      title: 'Espresso Martini',
+      imageUrl:
+          'https://images.immediate.co.uk/production/volatile/sites/30/2020/10/Ultimate-espresso-martini-260c465.jpg',
+      ingredients: [
+        '60ml Vodka',
+        '30ml cofee liquor',
+        '30ml espresso',
+        '15ml simple syrup',
+      ],
+      steps: [
+        'Add vodka, coffee liqueur, espresso and simple syrup to a shaker filled with ice and shake until well-chilled.',
+        'Strain into a chilled cocktail glass.',
+        'Garnish with 3 coffee beans.',
+      ],
+      alcoholContent: '19.5',
+      complexity: Complexity.simple,
+      flavourProfile: FlavourProfile.sweet,
+      power: Power.medium),
   Coctail(
     id: 'm3',
     categories: [
@@ -122,5 +125,7 @@ const dummyCoctails = [
     ],
     alcoholContent: '11,5',
     complexity: Complexity.simple,
+    flavourProfile: FlavourProfile.dry,
+    power: Power.gentle,
   ),
 ];

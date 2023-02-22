@@ -4,6 +4,18 @@ enum Complexity {
   hard,
 }
 
+enum FlavourProfile {
+  sweet,
+  sour,
+  dry,
+}
+
+enum Power {
+  strong,
+  medium,
+  gentle,
+}
+
 class Coctail {
   final String id;
   final List<String> categories;
@@ -13,6 +25,9 @@ class Coctail {
   final List<String> steps;
   final String alcoholContent;
   final Complexity complexity;
+  final FlavourProfile flavourProfile;
+  final Power power;
+
   const Coctail({
     required this.id,
     required this.categories,
@@ -22,5 +37,7 @@ class Coctail {
     required this.steps,
     required this.alcoholContent,
     required this.complexity,
+    required this.power,
+    required this.flavourProfile,
   });
 }

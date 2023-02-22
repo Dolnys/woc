@@ -27,6 +27,8 @@ class CategoryCoctailsScreen extends StatelessWidget {
             title: categoryCoctail[index].title,
             alcoholContent: categoryCoctail[index].alcoholContent,
             complexity: categoryCoctail[index].complexity,
+            flavourProfile: categoryCoctail[index].flavourProfile,
+            power: categoryCoctail[index].power,
           );
         },
         itemCount: categoryCoctail.length,

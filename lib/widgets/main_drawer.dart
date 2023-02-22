@@ -48,14 +48,14 @@ class MainDrawer extends StatelessWidget {
             'Coctails',
             Icons.local_bar,
             () {
-              Navigator.of(context).pushNamed('/');
+              Navigator.of(context).pushReplacementNamed('/');
             },
           ),
           buildListTile(
             'Filter',
             Icons.filter_alt,
             () {
-              Navigator.of(context).pushNamed('/filters');
+              Navigator.of(context).restorablePushReplacementNamed('/filters');
             },
           )
         ],
